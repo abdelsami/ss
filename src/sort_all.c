@@ -1,4 +1,6 @@
 #include "push_swap.h"
+
+void	sa_sb(t_list **stack, char c, int p);
 int	sml_index(t_list **stack_a)
 {
 	t_list	*tmp;
@@ -94,6 +96,9 @@ i = 1;
 		y--;
         i++;
 	}
+	if ((*stack_b)->value < (*stack_b)->next->value)
+		sa_sb(stack_b,'b', 1);
+	//return ;
     sort_three(stack_a);
     pa(stack_a ,stack_b,1);
     pa(stack_a,stack_b,1);
@@ -109,10 +114,12 @@ void    sort_all(t_list **stack_a, t_list **stack_b,int ac)
 	{
 		while (--k > 0)
 			ra(stack_a, 1);
+
 		pb(stack_a,stack_b,1);
 		sort_three(stack_a);
 		pa(stack_a,stack_b,1);
 	}
+	
 	if (ac == 6)
 		sort_five(stack_a,stack_b);
    	if (ac > 102)

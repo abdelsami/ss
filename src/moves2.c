@@ -59,6 +59,8 @@ void	rrb(t_list **stack_b, int p)
 	t_list	*last;
 
 	head = *stack_b;
+	if (!head)
+		return ;
 	while (head->next)
 	{
 		tmp = head;

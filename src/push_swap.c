@@ -42,10 +42,10 @@ int	main(int ac, char **av)
 	else	
 		sort_all(&stack_a, &stack_b, ac);
 	}
-//	while (stack_a != NULL)
-//	{
-//		printf("%d\n", stack_a->value);
-//		stack_a = stack_a->next;
-	//}	
+	while (stack_a != NULL)
+	{
+		printf("%d\n", stack_a->value);
+		stack_a = stack_a->next;
+	}
 	return 0;
 }
