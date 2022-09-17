@@ -6,7 +6,7 @@
 /*   By: asamia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/12 13:41:11 by asamia            #+#    #+#             */
-/*   Updated: 2022/08/12 13:44:48 by asamia           ###   ########.fr       */
+/*   Updated: 2022/09/17 16:41:41 by asamia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	*init_array(int ac, char **av)
 		if (ft_isnum(av[i + 1]) == 0)
 		{
 			free (array);
-			write(1, "ERROR\n", 6);
+			write(2, "ERROR\n", 6);
 			return (0);
 		}
 		else
@@ -40,16 +40,17 @@ int	*init_array(int ac, char **av)
 
 int	*sort(int *ar, int size)
 {
-	int i;
-	int j;
-	int tmp;
+	int	i;
+	int	j;
+	int	tmp;
+
 	i = 0;
-	while(i < size - 1)
+	while (i < size - 1)
 	{
-		j = i+1;
-		while(j < size)
+		j = i + 1;
+		while (j < size)
 		{
-			if(ar[i] > ar[j])
+			if (ar[i] > ar[j])
 			{
 				tmp = ar[i];
 				ar[i] = ar[j];
@@ -59,5 +60,5 @@ int	*sort(int *ar, int size)
 		}
 	i++;
 	}
-	return(ar);
+	return (ar);
 }

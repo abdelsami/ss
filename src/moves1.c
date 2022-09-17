@@ -6,7 +6,7 @@
 /*   By: asamia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 14:26:37 by asamia            #+#    #+#             */
-/*   Updated: 2022/08/22 19:01:57 by asamia           ###   ########.fr       */
+/*   Updated: 2022/09/17 15:12:45 by asamia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void	sa_sb(t_list **stack, char c, int p)
 	(*stack)->next->value = tmp;
 	if (p && c == 'a')
 		write(1, "sa\n", 3);
-
 	if (p && c == 'b')
 		write(1, "sb\n", 3);
 }

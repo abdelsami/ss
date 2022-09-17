@@ -6,7 +6,7 @@
 /*   By: lsemlali <lsemlali@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 11:53:05 by lsemlali          #+#    #+#             */
-/*   Updated: 2022/04/11 12:01:16 by lsemlali         ###   ########.fr       */
+/*   Updated: 2022/09/17 15:37:10 by asamia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ void	all_back(t_list **a, t_list **b)
 			if ((*a)->value == k)
 				k = st_size(b) - 1;
 			if ((*a) && (*a)->next && (*a)->value > (*a)->next->value)
-				sa_sb(a,'a', 1);
+				sa_sb(a, 'a', 1);
 		}
 		if ((*b) && (*b)->next && (*b)->next->value == k)
-			sa_sb(b,'b', 1);
+			sa_sb(b, 'b', 1);
 		else
 		{
 			p = whereis_he(b, k);

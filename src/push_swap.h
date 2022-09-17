@@ -6,7 +6,7 @@
 /*   By: asamia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/12 14:49:42 by asamia            #+#    #+#             */
-/*   Updated: 2022/08/22 19:07:55 by asamia           ###   ########.fr       */
+/*   Updated: 2022/09/17 15:33:20 by asamia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,18 @@ typedef struct t_list{
 
 t_list	*get_stack_a(int *arr, int n);
 
-int	is_sorted(t_list **stack_a);
+int		is_sorted(t_list **stack_a);
 t_list	*ft_lstlast(t_list *lst);
 void	sort_big(t_list **a, t_list **b, int j);
 void	sort_five(t_list **stack_a, t_list **stack_b);
+void	sort_three(t_list **stack_a);
 void	smart_push(t_list **a, t_list **b, int z, int p);
-int	get_div(int y, int j);
-int	whereis_he(t_list **st, int k);
-int	st_size(t_list **stack_a);
+int		get_div(int y, int j);
+int		whereis_he(t_list **st, int k);
+int		st_size(t_list **stack_a);
 int		*sort(int *ar, int size);
-void    sort_all(t_list **stack_a, t_list **stack_b,int ac);
-int     *sar(int *ar, int *sorted, int size);
+void	sort_all(t_list **stack_a, t_list **stack_b, int ac);
+int		*sar(int *ar, int *sorted, int size);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	sa_sb(t_list **stack, char c, int p);
